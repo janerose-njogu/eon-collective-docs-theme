@@ -7,25 +7,30 @@ Development
 ===========
 
 
-For local development you need a system with Node v18.x, Python3, and Git.
-It is strongly recommended to use a Python virtual environment (`venv`_).
+For local development you need to install Node v18.x, Python3, and Git.
+
+It is strongly recommended to use a Python virtual environment.
+
 The build process derives the version from repository data, so it's necessary
 to clone the repository and not just download a single snapshot.
 
 Mac or Linux
 ============
 
-These steps require having ``make`` installed. If the first command below
-produces an error, you can follow the steps below in the Windows section.
+You should have ``make`` installed. 
 
-Start with ``make``
+If the first command below produces an error, you can follow the steps below in the Windows section.
+
+Start with running the ``make`` command in the terminal. 
+This will show all the tasks that are available using that ``make`` command.
 
 .. code-block:: shell
 
    # show all available tasks
    make
 
-Install requirements and fulfill Python and Node demands (repeatable)
+Follow the steps highlighted in your terminal.
+These steps will ensure that you have installed the requirements and fulfilled Python and Node demands.
 
 .. code-block:: text
 
