@@ -12,6 +12,7 @@
 .tox
 /.conda-*
 /.venv
+sphinx-dev/
 /Pipfile*
 /yarn-error.log
 bower_components/
