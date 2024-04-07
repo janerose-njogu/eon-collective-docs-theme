@@ -9,7 +9,7 @@ module.exports = {
     fontawesome: path.resolve(__dirname, 'sass/fontawesome.scss'),
   },
   output: {
-    path: path.resolve(__dirname, 'eon-collective-docs-theme/static/dist'),
+    path: path.resolve(__dirname, 'eon_collective_docs_theme/static/dist'),
     filename: '[name].js',
   },
   module: {

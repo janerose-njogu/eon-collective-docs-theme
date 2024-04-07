@@ -4,13 +4,12 @@ import os
 from importlib.metadata import version
 
 
-__version__ = version("eon-collective-docs-theme")
+__version__ = version("eon_collective_docs_theme")
 __version_full__ = __version__
 
 
 def get_html_theme_path():
     """Return absolute path to parent folder of installed theme."""
-
     return os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 

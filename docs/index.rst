@@ -22,9 +22,6 @@ theme looks like, checkout our :doc:`examples <examples/index>`.
    customizing
    development
    examples/index
-   contributing
-   contributors
-   Changelog <changelog>
 
 Indices and tables
 ==================
