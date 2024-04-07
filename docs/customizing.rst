@@ -18,8 +18,8 @@ for the theme.
    # These are options specifically for the Wagtail Theme.
    html_theme_options = dict(
        project_name = "My Project",
-       logo = "img/wagtail-logo-new.svg",
-       logo_alt = "Wagtail",
+       logo = "img/eon.svg",
+       logo_alt = "eon",
        logo_height = 59,
        logo_url = "/",
        logo_width = 45,
@@ -65,7 +65,7 @@ footer of your docs.
 
 .. code-block:: python
 
-   copyright = "2021, My Company Inc."
+   copyright = "Copyright © Eon Collective LLC 2024. All rights reserved."
    html_show_copyright = True
 
 Show Date Last Updated

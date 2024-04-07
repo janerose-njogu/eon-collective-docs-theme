@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path'); 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
     fontawesome: path.resolve(__dirname, 'sass/fontawesome.scss'),
   },
   output: {
-    path: path.resolve(__dirname, 'sphinx_wagtail_theme/static/dist'),
+    path: path.resolve(__dirname, 'eon-collective-docs-theme/static/dist'),
     filename: '[name].js',
   },
   module: {

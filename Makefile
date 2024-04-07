@@ -1,6 +1,7 @@
 .DEFAULT_GOAL := help
 
-
+# Defines a python script to open a file in a web browser and export it 
+# as an environment variable named BROWSER_PYSCRIPT.
 define BROWSER_PYSCRIPT
 import os, webbrowser, sys
 
@@ -10,7 +11,8 @@ webbrowser.open("file://" + pathname2url(os.path.abspath(sys.argv[1])))
 endef
 export BROWSER_PYSCRIPT
 
-
+# Defines a Python script to print out help messages for each target in the Makefile and 
+# export it as an environment variable named PRINT_HELP_PYSCRIPT.
 define PRINT_HELP_PYSCRIPT
 import re, sys
 
@@ -36,7 +38,7 @@ Build, import from package, test, render the repo docs and open in browser:
 endef
 export PRINT_HELP_PYSCRIPT
 
-
+# Variable named BROWSER that contains a command to execute the Python scripts defined earlier.
 BROWSER := python -c "$$BROWSER_PYSCRIPT"
 
 .PHONY: help
@@ -76,7 +78,7 @@ clean-build: ##- Remove build artifacts
 
 .PHONY: clean-frontend
 clean-frontend: ## Clean frontend files
-	rm -rf sphinx_wagtail_theme/static/dist
+	rm -rf eon_collective_docs_theme/static/dist
 
 clean-pyc: ##- Remove Python file artifacts
 	find . -name '*.pyc' -exec rm -f {} +
@@ -100,7 +102,7 @@ clean-docs: ##- Remove previously built docs
 
 .PHONY: coverage
 coverage: ##- Check code coverage quickly with default Python
-	coverage run --source sphinx_wagtail_theme -m pytest
+	coverage run --source eon_collective_docs_theme -m pytest
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
@@ -147,7 +149,7 @@ install-for-development: clean uninstall ## Clean, uninstall and pip install -e 
 .PHONY: lint
 lint: ## Check Python style
 	flake8 *.py
-	flake8 sphinx_wagtail_theme
+	flake8 eon_collective_docs_theme
 	flake8 tests
 
 
@@ -156,13 +158,13 @@ lm: lint-minimal
 lint-minimal: ## Check Python style for minimal standards (alias lm)
 	flake8 *.py  --count --select=E9,F63,F7,F82 --show-source --statistics
 	echo
-	flake8 sphinx_wagtail_theme   --count --select=E9,F63,F7,F82 --show-source --statistics
+	flake8 eon_collective_docs_theme   --count --select=E9,F63,F7,F82 --show-source --statistics
 	echo
 	flake8 tests --count --select=E9,F63,F7,F82 --show-source --statistics
 	echo
 	flake8 *.py  --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 	echo
-	flake8 sphinx_wagtail_theme   --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+	flake8 eon_collective_docs_theme   --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 	echo
 	flake8 tests --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 	echo
@@ -207,8 +209,8 @@ test-tox: ##- Run tests on every Python version with tox
 
 .PHONY: test-import
 test-import: ## Verify the extension is install and can be imported
-	python3 -c "import sphinx_wagtail_theme as m; print(m.__version__)"
-	python3 -c "import sphinx_wagtail_theme as m, pprint; pprint.pprint(m.__version_full__)"
+	python -c "import eon_collective_docs_theme as m; print(m.__version__)"
+	python -c "import eon_collective_docs_theme as m, pprint; pprint.pprint(m.__version_full__)"
 
 .PHONY: test-visual-regression
 test-visual-regression: ## Run visual regression tests

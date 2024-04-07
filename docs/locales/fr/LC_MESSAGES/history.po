@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, Wagtail contributors
+# Copyright © Eon Collective LLC 2024. All rights reserved.
 # This file is distributed under the same license as the Sphinx Wagtail
 # theme package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.

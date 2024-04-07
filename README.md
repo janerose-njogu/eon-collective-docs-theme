@@ -16,7 +16,7 @@ It is also assumed that you understand Sphinx.
 
 ```sh
 # TODO
-pip install sphinx-wagtail-theme
+pip install eon-collective-docs-theme
 ```
 
 ## Usage
@@ -26,12 +26,14 @@ In your conf.py file of a Sphinx documentation, specify the "Eon Collective Docu
 ```python
 # TODO
 # include the theme in the list of extensions to be loaded
-extensions = ['sphinx_wagtail_theme', …]
+extensions = ['eon_collective_docs_theme', …]
 
 # select the theme
-html_theme = 'sphinx_wagtail_theme'
+html_theme = 'eon_collective_docs_theme'
 ```
 
 ## Credits
 
-The Eon Collective Documentation theme is based on the [Sphinx Wagtail theme](https://github.com/wagtail/sphinx_wagtail_theme). Read more about Sphinx Wagtail theme in their [documentation](https://sphinx-wagtail-theme.readthedocs.io/en/latest/).
+The Eon Collective Documentation theme is based on the [Sphinx Wagtail theme](https://github.com/wagtail/sphinx_wagtail_theme). 
+
+Read more about Sphinx Wagtail theme in their [documentation](https://sphinx-wagtail-theme.readthedocs.io/en/latest/).

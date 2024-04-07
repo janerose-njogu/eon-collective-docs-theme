@@ -1,10 +1,10 @@
-"""Sphinx Wagtail theme"""
+"""Eon Collective Documentation theme"""
 
 import os
 from importlib.metadata import version
 
 
-__version__ = version("sphinx-wagtail-theme")
+__version__ = version("eon-collective-docs-theme")
 __version_full__ = __version__
 
 
@@ -42,7 +42,7 @@ def setup(app):
     app.connect('html-page-context', update_context)
     if hasattr(app, 'add_html_theme'):
         theme_path = os.path.abspath(os.path.dirname(__file__))
-        app.add_html_theme("sphinx_wagtail_theme", theme_path)
+        app.add_html_theme("eon_collective_docs_theme", theme_path)
     # unconfirmed: just assuming that parallel_write_safe is ok
     return {
         "version": __version__,
