@@ -17,12 +17,12 @@ $gray-900: #212121;
 $black: #000;
 
 $teal: #007d7e;
-$indigo: #2e1f5e;
+$dark-blue: #2d457b;
 $bright-green: #3beccd;
 $bright-green-700: color.adjust($bright-green, $lightness: -15%);
 $bright-green-900: color.adjust($bright-green, $lightness: -30%);
 
-$primary: $indigo;
+$primary: $dark-blue;
 $success: #a456c9;
 $info: $teal;
 $warning: #2f128d;

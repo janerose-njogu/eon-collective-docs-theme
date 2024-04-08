@@ -40,7 +40,8 @@ def update_context(app, pagename, templatename, context, doctree):
         config_file_path = os.path.join(docs_dir,"source")
 
     config_values = Config.read(confdir=config_file_path)._raw_config
-    context["repository"] = config_values["repository"]
+    if(config_values.get("repository")):
+        context["repository"] = config_values["repository"]
     return app.builder.env.metadata.get(pagename, {}).get("template")
 
 def setup(app):

@@ -19,7 +19,6 @@ source_suffix = {
     '.md': 'markdown',
 }
 master_doc = 'index'
-repository = 'https://bitbucket.org/eoncollective-code-repository/adept_to_coalesce_scheduler/src/main/'
 copyright = "Eon Collective LLC 2024. All rights reserved."
 author = "Janerose"
 # The short X.Y version.
