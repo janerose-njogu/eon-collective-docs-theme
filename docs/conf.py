@@ -19,8 +19,8 @@ source_suffix = {
     '.md': 'markdown',
 }
 master_doc = 'index'
-project = 'Eon Collective Documentation Theme'
-copyright = "Copyright © Eon Collective LLC 2024. All rights reserved."
+repository = 'https://bitbucket.org/eoncollective-code-repository/adept_to_coalesce_scheduler/src/main/'
+copyright = "Eon Collective LLC 2024. All rights reserved."
 author = "Janerose"
 # The short X.Y version.
 version = eon_collective_docs_theme.__version__
@@ -30,7 +30,7 @@ language = "en"
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'requirements.txt']
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
-today_fmt = '%Y-%m-%d %H:%M'
+today_fmt = '%m/%d/%Y %I:%M:%S %p'
 
 # -- Options for HTML output -------------------------------------------
 html_theme = 'eon_collective_docs_theme'
