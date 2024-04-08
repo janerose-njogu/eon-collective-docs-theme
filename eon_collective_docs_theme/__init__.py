@@ -35,11 +35,7 @@ def update_context(app, pagename, templatename, context, doctree):
     context["theme_version"] = __version__
     parent_dir = os.path.dirname(os.path.dirname(__file__))
     docs_dir = os.path.join(parent_dir, "docs")
-    config_file_path = docs_dir
-    if os.path.isdir(os.path.join(docs_dir, "source")):
-        config_file_path = os.path.join(docs_dir,"source")
-
-    config_values = Config.read(confdir=config_file_path)._raw_config
+    config_values = Config.read(confdir=docs_dir)._raw_config
     if(config_values.get("repository")):
         context["repository"] = config_values["repository"]
     return app.builder.env.metadata.get(pagename, {}).get("template")
