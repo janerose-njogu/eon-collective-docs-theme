@@ -1,5 +1,5 @@
-Codebase Documentation Site
-===========================
+Connector Documentation
+=======================
 
  This documentation provides rendering for code in repositories belonging to Eon Collective Workspace.
 

@@ -15,7 +15,6 @@ It is also assumed that you understand Sphinx.
 ## Installation
 
 ```sh
-# TODO
 pip install eon-collective-docs-theme
 ```
 
@@ -24,7 +23,6 @@ pip install eon-collective-docs-theme
 In your conf.py file of a Sphinx documentation, specify the "Eon Collective Documentation theme" as an extension.
 
 ```python
-# TODO
 # include the theme in the list of extensions to be loaded
 extensions = ['eon_collective_docs_theme', …]
 
